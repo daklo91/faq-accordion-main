@@ -116,6 +116,7 @@ h1 {
   font-family: var(--workSans);
   overflow: hidden;
   border-bottom: solid 1px var(--light-pink);
+  margin: 0px;
 }
 
 .answer-text:last-child {
@@ -137,4 +138,5 @@ h1 {
   display: grid;
   grid-template-rows: min-content 0fr;
   transition: grid-template-rows 500ms;
+  margin-bottom: 16px;
 }
