@@ -12,63 +12,67 @@
 
 <body>
   <div class="background-decoration"></div>
-  <main>
-    <h1><img class="star-icon" alt="" src="./assets/images/icon-star.svg">FAQs</h1>
+  <div class="container">
+    <main>
+      <h1><img class="star-icon" alt="" src="./assets/images/icon-star.svg">FAQs</h1>
 
-    <button class="accordion-button" onclick="accordionInteraction(1)">
-      <p>What is Frontend Mentor, and how will it help me?</p>
-      <div class="accordion-icon-container"><img id="accordion-icon-1" src="./assets/images/icon-plus.svg" alt="">
+      <button class="accordion-button" onclick="accordionInteraction(1)">
+        <p>What is Frontend Mentor, and how will it help me?</p>
+        <div class="accordion-icon-container"><img id="accordion-icon-1" src="./assets/images/icon-plus.svg" alt="">
+        </div>
+      </button>
+      <div class="expandable-parent" id="accordion-container-1">
+        <span></span>
+        <p class="answer-text">Frontend Mentor offers realistic coding challenges to help
+          developers improve their
+          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+          all levels and ideal for portfolio building.</p>
       </div>
-    </button>
-    <div class="expandable-parent" id="accordion-container-1">
-      <span></span>
-      <p class="answer-text">Frontend Mentor offers realistic coding challenges to help
-        developers improve their
-        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-        all levels and ideal for portfolio building.</p>
-    </div>
 
-    <button class="accordion-button" onclick="accordionInteraction(2)">
-      <p>Is Frontend Mentor free?</p>
-      <div class="accordion-icon-container"><img id="accordion-icon-2" src="./assets/images/icon-plus.svg" alt="">
+      <button class="accordion-button" onclick="accordionInteraction(2)">
+        <p>Is Frontend Mentor free?</p>
+        <div class="accordion-icon-container"><img id="accordion-icon-2" src="./assets/images/icon-plus.svg" alt="">
+        </div>
+      </button>
+      <div class="expandable-parent" id="accordion-container-2">
+        <span></span>
+        <p id="2" class="answer-text">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+          option providing access to a range of projects suitable for all skill levels.</p>
       </div>
-    </button>
-    <div class="expandable-parent" id="accordion-container-2">
-      <span></span>
-      <p id="2" class="answer-text">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
-        option providing access to a range of projects suitable for all skill levels.</p>
-    </div>
 
-    <button class="accordion-button" onclick="accordionInteraction(3)">
-      <p>Can I use Frontend Mentor projects in my portfolio?</p>
-      <div class="accordion-icon-container"><img id="accordion-icon-3" src="./assets/images/icon-plus.svg" alt="">
+      <button class="accordion-button" onclick="accordionInteraction(3)">
+        <p>Can I use Frontend Mentor projects in my portfolio?</p>
+        <div class="accordion-icon-container"><img id="accordion-icon-3" src="./assets/images/icon-plus.svg" alt="">
+        </div>
+      </button>
+      <div class="expandable-parent" id="accordion-container-3">
+        <span></span>
+        <p id="3" class="answer-text">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an
+          excellent
+          way to showcase your skills to potential employers!</p>
       </div>
-    </button>
-    <div class="expandable-parent" id="accordion-container-3">
-      <span></span>
-      <p id="3" class="answer-text">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an
-        excellent
-        way to showcase your skills to potential employers!</p>
-    </div>
 
-    <button class="accordion-button" onclick="accordionInteraction(4)">
-      <p>How can I get help if I'm stuck on a challenge?</p>
-      <div class="accordion-icon-container"><img id="accordion-icon-4" src="./assets/images/icon-plus.svg" alt="">
+      <button class="accordion-button" onclick="accordionInteraction(4)">
+        <p>How can I get help if I'm stuck on a challenge?</p>
+        <div class="accordion-icon-container"><img id="accordion-icon-4" src="./assets/images/icon-plus.svg" alt="">
+        </div>
+      </button>
+      <div class="expandable-parent" id="accordion-container-4">
+        <span></span>
+        <p id="4" class="answer-text">The best place to get help is inside Frontend Mentor's Discord community. There's
+          a
+          help
+          channel where you can ask questions and seek support from other community members.</p>
       </div>
-    </button>
-    <div class="expandable-parent" id="accordion-container-4">
-      <span></span>
-      <p id="4" class="answer-text">The best place to get help is inside Frontend Mentor's Discord community. There's a
-        help
-        channel where you can ask questions and seek support from other community members.</p>
-    </div>
-  </main>
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    </main>
   </div>
+
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a href="https://github.com/daklo91/faq-accordion-main" target="_blank">daklo91</a>.
+  </footer>
 </body>
 
 </html>

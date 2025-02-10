@@ -38,9 +38,12 @@ body {
   height: 100vh;
 }
 
+.container {
+  padding: 0 30px;
+}
+
 main {
   max-width: 520px;
-  width: 100%;
   background-color: var(--white);
   margin: auto;
   margin-top: 150px;
@@ -73,7 +76,10 @@ h1 {
 }
 
 .accordion-button {
-  all: unset;
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -86,8 +92,7 @@ h1 {
 
 .accordion-button img {
   transition: max-width 0.1s ease-in;
-  width: 100%;
-  max-width: 30px;
+  width: 30px;
 }
 
 .accordion-button:hover img {
@@ -107,8 +112,7 @@ h1 {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  width: 40px;
-  margin-right: -8px;
+  margin-left: 20px;
 }
 
 .answer-text {
@@ -124,13 +128,14 @@ h1 {
   margin-bottom: 0;
 }
 
-.attribution {
+footer {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin: 60px 20px 0px 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.attribution a {
+footer a {
   color: hsl(228, 45%, 44%);
 }
 
@@ -139,4 +144,23 @@ h1 {
   grid-template-rows: min-content 0fr;
   transition: grid-template-rows 500ms;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .background-decoration {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    height: 240px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+  .star-icon {
+    width: 25px;
+    margin-right: 25px;
+  }
+  main {
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
 }
